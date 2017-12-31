@@ -1,13 +1,15 @@
 <!Doctype html>
 
-<html>
+<html land="en">
 
 <head>
+	<meta charset="UTF-8">
+
 	<title>Mystical Crystal Magic Number Game</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<script src="assets/javascript/game.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
 </head>
@@ -23,6 +25,8 @@
 </header>
 
 <body>
+
+
 
 	<div class="instructions">
 	
@@ -45,31 +49,41 @@
 					<br>
 	</div>
 
-	<div class="score">
+	<div class="container">
 
-		<p>Your Score:</p>
+		<div id="guessingNumber">
 
-		<br>
-		<br>
+			<p id= "result"></p> 
 
-		<p>Wins:</p>
+		</div>
 
-		<p>Losses:</p>
+		<div id="scoreBoard">
+
+				<h3><span id="status"></span></h3>
+				<h3><span id="win"></span></h3>
+				<h3><span id="lose"></span></h3>
+		</div>
+
+		<div id="yourScore">
+
+		<p id="previous"></p>
 
 
 
+		</div>
+
+ 			
+
+			<div class="crystals">
+
+		<!-- //*<img class="citrine" id="crystalButton" src="assets/images/citrine.jpeg" "citrine">
+		<img class="lapiz"  id="crystalButton" src="assets/images/lapiz.jpeg" "lapiz">
+		<img class="pyrite"  id="crystalButton" src="assets/images/pyrite.jpeg" "pyrite">
+		<img class="celestine" i id="crystalButton" src="assets/images/celestine.jpeg" "celestine"> -->
 
 	</div>
 
-	<div>
-
-		<img class="citrine" src="assets/images/citrine.jpeg">
-		<img class="lapiz" src="assets/images/lapiz.jpeg">
-		<img class="pyrite" src="assets/images/pyrite.jpeg">
-		<img class="celestine" src="assets/images/celestine.jpeg">
-
-	</div>
-
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
