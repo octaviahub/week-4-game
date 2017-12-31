@@ -11,6 +11,13 @@ const resetAndStart = function () {
 
 	$(".crystals").empty();
 
+	let images = [
+		document.querySelector(".citrine"),
+		document.querySelector(".lapiz"),
+		document.querySelector(".pyrite"),
+		document.querySelector(".celestine") 
+		];
+
 	random_result = Math.floor(Math.random() * 60) + 30;
 
 //console.log(random_result)
@@ -28,6 +35,11 @@ const resetAndStart = function () {
 					"class": 'crystal',
 					"data-random": random 
 			});
+				crystal.css({
+					"background-image": "src('" + images[i] + "')",
+					"background-size": "cover" 
+
+				});
 
 		$(".crystals").append(crystal);
 	}

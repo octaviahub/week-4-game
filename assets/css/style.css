@@ -21,6 +21,7 @@ h1 {
 
 }
 
+
 .crystal {
 	height: 200px;
 	width: 250px;
@@ -34,7 +35,6 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 
 }
 
@@ -53,12 +53,6 @@ p {
 li {
 	font-size: 25px;
 	color: #8AD9F7;
-}
-
-.citrine {
-	margin-left: 450px;
-	width: 250px;
-
 }
 
 
